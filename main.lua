@@ -1,14 +1,6 @@
 local json = require("cjson");
 local secret = require("secret");
 
-
---[[
-
-should add logging of responses and ips and then add thing in secret dictating how many log entries to save
-save log entries by simply appending to a file, and then use the wc -l command to count lines,
-one line per entry
-]]
-
 --Payload and url info
 local payload = {
 	["secretapikey"] = secret.secretapikey,
